@@ -23,3 +23,6 @@ BOARD_SEPOLICY_DIRS += \
     device/zenx/sepolicy/common/dynamic \
     device/zenx/sepolicy/common/vendor
 endif
+
+# Selectively include legacy rules defined by the products
+-include device/zenx/sepolicy/legacy-common/sepolicy.mk
